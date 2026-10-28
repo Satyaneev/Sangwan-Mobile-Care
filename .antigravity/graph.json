@@ -1,24 +1,50 @@
 {
-  "timestamp": "2026-10-28T16:06:40Z",
+  "timestamp": "2026-10-28T16:15:15Z",
+  "framework": "nextjs-14-app-router",
+  "deployTarget": "vercel",
   "nodes": [
     {
-      "id": "index.html",
-      "type": "html",
-      "hash": "A2A752891725855CFE4EE80F84DD328593393B31D140D7EBEA635AD13D7FBF35"
+      "id": "app/layout.tsx",
+      "type": "root_layout",
+      "hash": "C17C55D8B68E522013C6C8F3456992A1027CE5E5E2F9A4F556F99429379FE770"
     },
     {
-      "id": "css/style.css",
-      "type": "css",
-      "hash": "4FE3263070750F7650740E9B5F69BA2A4EE3EE1216EF05D1CB22C120C128AF94"
+      "id": "app/page.tsx",
+      "type": "page",
+      "hash": "9A09EC0731BAC2BC9FE9266330F500497410E027EC1D64AC3E4C41ED301927C0"
     },
     {
-      "id": "js/app.js",
-      "type": "javascript",
-      "hash": "D08CE715F704D618C04152C7270B47B86AD9EA74550FBF45D966A0DCD001A346"
+      "id": "components/Header.tsx",
+      "type": "component",
+      "hash": "7419D4DD3EF929F27350430ADA4ACC33C04B13D01678F026F505D513ED9F0A97"
+    },
+    {
+      "id": "components/Estimator.tsx",
+      "type": "component",
+      "hash": "88C5F45E94637447E854814412047690586B07AA575E4DEA27771DE707BF0177"
+    },
+    {
+      "id": "components/DeviceDeals.tsx",
+      "type": "component",
+      "hash": "97BD2222143BA07F0E0F731ECB7453118768A3D199CEFD83366F9D1EC7DC0931"
+    },
+    {
+      "id": "components/FaqSection.tsx",
+      "type": "component",
+      "hash": "A2818D03F4C5418BC6BFFC6649BDFAB7289E26310FDB2CE8B309BF00C73E74C7"
+    },
+    {
+      "id": "components/MobileStickyBar.tsx",
+      "type": "component",
+      "hash": "AAB72D81E5F1184858402CECF98D386734DB6A756B480B1DFBD37103928F7851"
     }
   ],
   "edges": [
-    { "source": "index.html", "target": "css/style.css", "relation": "stylesheet" },
-    { "source": "index.html", "target": "js/app.js", "relation": "script" }
+    { "source": "app/layout.tsx", "target": "app/globals.css", "relation": "style_import" },
+    { "source": "app/page.tsx", "target": "components/Header.tsx", "relation": "jsx_component" },
+    { "source": "app/page.tsx", "target": "components/Estimator.tsx", "relation": "jsx_component" },
+    { "source": "app/page.tsx", "target": "components/DeviceDeals.tsx", "relation": "jsx_component" },
+    { "source": "app/page.tsx", "target": "components/FaqSection.tsx", "relation": "jsx_component" },
+    { "source": "app/page.tsx", "target": "components/MobileStickyBar.tsx", "relation": "jsx_component" }
   ]
 }
