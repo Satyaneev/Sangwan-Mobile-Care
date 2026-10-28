@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-28T16:06:40Z",
+  "nodes": [
+    {
+      "id": "index.html",
+      "type": "html",
+      "hash": "A2A752891725855CFE4EE80F84DD328593393B31D140D7EBEA635AD13D7FBF35"
+    },
+    {
+      "id": "css/style.css",
+      "type": "css",
+      "hash": "4FE3263070750F7650740E9B5F69BA2A4EE3EE1216EF05D1CB22C120C128AF94"
+    },
+    {
+      "id": "js/app.js",
+      "type": "javascript",
+      "hash": "D08CE715F704D618C04152C7270B47B86AD9EA74550FBF45D966A0DCD001A346"
+    }
+  ],
+  "edges": [
+    { "source": "index.html", "target": "css/style.css", "relation": "stylesheet" },
+    { "source": "index.html", "target": "js/app.js", "relation": "script" }
+  ]
+}
